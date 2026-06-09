@@ -1,0 +1,19 @@
+# Secrets / local env
+.env
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Generated artifacts (figures ARE committed so the blog renders them)
+results/
+
+# Legacy model downloads
+models/
+logs/

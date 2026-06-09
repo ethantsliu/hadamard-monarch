@@ -1,0 +1,9 @@
+# Hadamard-Monarch — slim, Apple-Silicon-friendly dependencies.
+# Everything runs on macOS (MPS/CPU). No CUDA / transformers / safetensors /
+# tokenizers (their native wheels clash with torch on some macOS Python builds);
+# GPT-2 assets are fetched with curl and loaded with torch directly.
+torch>=2.2
+numpy
+matplotlib
+regex          # GPT-2 BPE pre-tokenizer (\p{L}/\p{N} unicode classes)
+pytest
